@@ -63,9 +63,3 @@ make coverage
 ```
 make lint
 ```
-
-## Module Generator
-If you working on new module and too lazy to create the structure one by one, you can use generator:
-```
-python3 gawekno.py sales v1
-```
