@@ -1,5 +1,5 @@
-# boilerplate-python-cleanarch
-Boilerplate for Python using Clean Architecture 
+# Sample Product
+Python Sanic using Clean Architecture 
 
 ## Requirements
 - Python version 3.6+
