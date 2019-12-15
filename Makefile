@@ -17,4 +17,4 @@ lint:
 	pylint src/*
 
 migrate:
-	orator migrate -c config/orator.py
+	orator migrate -c config/orator.py -f
