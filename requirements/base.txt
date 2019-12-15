@@ -8,7 +8,7 @@ sanic-cors==0.9.7
 
 # Requests is an elegant and simple HTTP library for Python, built for human beings.
 # https://github.com/requests/requests
-requests==2.19.1
+requests==2.20.0
 
 # Decouple helps you to organize your settings so that you can change parameters without having to redeploy your app
 # https://github.com/henriquebastos/python-decouple
