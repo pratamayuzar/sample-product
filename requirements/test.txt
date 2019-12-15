@@ -1,0 +1,13 @@
+# The pytest framework makes it easy to write small tests, yet scales to support complex functional testing for applications and libraries.
+# https://docs.pytest.org/en/latest/
+pytest==4.0.2
+
+# Pytest plugin for measuring coverage.
+# https://github.com/pytest-dev/pytest-cov
+pytest-cov==2.6.0
+
+attrs==19.1.0
+
+# The requests library has the concept of pluggable transport adapters. These adapters allow you to register your own handlers for different URIs or protocols.
+# https://github.com/jamielennox/requests-mock
+requests-mock==1.5.2

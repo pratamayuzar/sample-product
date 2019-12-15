@@ -1,0 +1,31 @@
+{% include 'header.html' %}
+
+<div class="container-fluid">
+    <h1 class="mt-4">List Product</h1>
+    <p>Show all data product</p>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>URL</th>
+            <th>Produk</th>
+            <th>Price</th>
+            <th colspan="2"></th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for item in response.data %}
+        <tr>
+            <td>{{ item.url }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.price }}</td>
+            <td><a href="{{ app.url_for('productsV1.detail', identifier=item.id) }}">Detail</a></td>
+            <td><a href="{{ app.url_for('productsV1.detail', identifier=item.id) }}?crawl=true">Detail & Crawl</a></td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% include 'footer.html' %}
+
+

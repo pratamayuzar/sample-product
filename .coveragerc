@@ -1,0 +1,5 @@
+[run]
+omit =
+    # omit init
+    */__init__.py
+    src/shared/request/*

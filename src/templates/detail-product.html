@@ -1,0 +1,39 @@
+{% include 'header.html' %}
+
+<div class="container-fluid">
+    <h1 class="mt-4">Detail Product</h1>
+
+    {% for key, value in item.items() %}
+    {% if key not in ['created', 'priceHistory'] %}
+    <div class="row">
+        <div class="col-2">
+            {{ key }}
+        </div>
+        <div class="col">
+            : {{ value }}
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+
+    <h1 class="mt-4">Price History</h1>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Price</th>
+            <th>Crawl At</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for data in item.priceHistory %}
+        <tr>
+            <td>{{ data.price }}</td>
+            <td>{{ data.created }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+
+{% include 'footer.html' %}
