@@ -10,3 +10,4 @@ venv/
 env/
 .vscode
 _htmlcov/*
+sample-product-db
