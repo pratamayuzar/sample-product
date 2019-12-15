@@ -1,2 +1,2 @@
-web: make run
 release: make migrate
+web: make run
