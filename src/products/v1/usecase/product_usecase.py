@@ -90,12 +90,14 @@ class ProductDetailUseCase(UseCase):
                 'product_id': product.id,
                 'price': product.price,
                 'price_currency': product.price_currency,
-                'created_at': product.created_at,
+                'created_at': product.updated_at,
                 'updated_at': product.updated_at
             }
             self.repo.create_price_history(data)
 
             ProductCrawl.get_product(product)
+
+            self.repo.update(product)
 
         product.price_history = self.repo.get_price_history(product.id)
 
