@@ -32,7 +32,7 @@ Environment variables:
 cp env.example .env
 ```
 
-## Database Migiration
+## Database Migration
 ```
 make migrate
 ```
