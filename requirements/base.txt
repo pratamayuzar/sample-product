@@ -62,4 +62,4 @@ money==1.3.0
 # http://babel.pocoo.org/en/latest/
 Babel==2.6.0
 
-Jinja2==2.10.3
+Jinja2==2.11.3
