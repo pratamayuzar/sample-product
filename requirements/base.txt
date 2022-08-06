@@ -1,6 +1,6 @@
 # Sanic is a Flask-like Python 3.5+ web server that's written to go fast.
 # https://github.com/channelcat/sanic
-sanic==0.8.3
+sanic==20.12.7
 
 # A Sanic extension adding a decorator for CORS support. Based on flask-cors by Cory Dolphin.
 # https://github.com/ashleysommer/sanic-cors
